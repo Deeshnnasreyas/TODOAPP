@@ -10,6 +10,9 @@
     line-break: anywhere;
 
 }
+.todo-item-data{
+    align-items: center;
+}
 .todo-icon{
     font-size: 35px;
     cursor: pointer;
@@ -49,5 +52,11 @@
     }
     .edit-container button{
         margin-top: 15px;
+    }
+    .todo-item-data{
+        align-items: center;
+    }
+    .todo-item-data h3{
+        text-align: center;
     }
 }

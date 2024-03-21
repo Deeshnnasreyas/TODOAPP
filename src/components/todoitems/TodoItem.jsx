@@ -4,6 +4,7 @@ import Tooltip from "@mui/material/Tooltip";
 import EditIcon from "@mui/icons-material/Edit";
 import Button from "@mui/material/Button";
 import Checkbox from "@mui/material/Checkbox";
+import moment from "moment";
 import "./TodoItem.css";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 export default function TodoItem({
@@ -73,7 +74,10 @@ export default function TodoItem({
       {isCompleted === true &&
         taskCompleted.map((item, index) => (
           <div className="todo-item" key={index}>
-            <h3>{item.title}</h3>
+            <div className="todo-item-data">
+              <h3>Task-{item.title}</h3>
+              <p>Completed on {moment(item?.date).format("DD/MM/YYYY")}</p>
+            </div>
             <div className="todo-icon">
               <Tooltip title="Completed">
                 <Checkbox
