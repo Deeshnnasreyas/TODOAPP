@@ -4,7 +4,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { v4 as uuidv4 } from "uuid";
 import Aos from "aos";
-import moment from "moment";
 import { toast } from "react-toastify";
 import "./TodoList.css";
 import TodoItem from "../todoitems/TodoItem";
@@ -17,7 +16,6 @@ export default function TodoList() {
   const [taskCompleted, setCompletedTask] = useState([]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
-    // let date = moment(obj.bookingDate).format('DD/MM/YYYY');
     // To get todoData array from local storage
     let todoDatas = localStorage.getItem("todoData");
     if (todoDatas) {
