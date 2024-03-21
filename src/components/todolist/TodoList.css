@@ -1,0 +1,114 @@
+/* Todo list start */
+.todo-container {
+  background-color: #353434;
+  padding: 2%;
+  overflow-y: auto;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  max-height: 80vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.todo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn-container {
+  margin-bottom: 15px;
+}
+.todo-lists {
+  display: flex;
+  flex-direction: column;
+}
+.todo-icon {
+  display: flex;
+  align-items: center;
+}
+/* *******Responsive Design start************** */
+
+/* Extra small devices */
+@media (max-width: 567px) {
+  .todo-container {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .todo-input button {
+    margin-top: 15px;
+  }
+  .todo-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .edit-container {
+    align-items: center;
+  }
+  .edit-container input {
+    padding: 20px;
+    margin: 5px;
+    width: 100%;
+  }
+}
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .todo-container {
+    width: 600px;
+  }
+  .todo-input input {
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .todo-input button {
+    margin-top: 15px;
+  }
+}
+/* Medium device */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .todo-container {
+    width: 600px;
+  }
+  .todo-input input {
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .todo-input button {
+    margin-top: 15px;
+  }
+}
+/* Large device */
+@media (min-width: 991px) and (max-width: 119.98) {
+  .todo-container {
+    width: 700px;
+  }
+  .todo-input input {
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .todo-input button {
+    margin-top: 15px;
+  }
+}
+/* Extra large device */
+@media (min-width: 1200px) {
+  .todo-container {
+    width: 750px;
+  }
+  .todo-input input {
+    width: 500px;
+    margin-bottom: 15px;
+  }
+  .todo-input button {
+    margin-top: 15px;
+  }
+}
